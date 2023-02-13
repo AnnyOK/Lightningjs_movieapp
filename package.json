@@ -1,0 +1,7 @@
+{
+  "name": "com.domain.app.mymovieapp",
+  "description": "mymovieapp",
+  "dependencies": {
+    "@lightningjs/sdk": "^5.2.0"
+  }
+}
