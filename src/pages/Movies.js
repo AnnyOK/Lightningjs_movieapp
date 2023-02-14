@@ -6,10 +6,10 @@ export class Movies extends Lightning.Component {
   static _template() {
     return {
       rect:true,
-      // x:10,
-      // y:10,
-      // w:1920,
-      // h:1080,
+      x:10,
+      y:10,
+      w:1920,
+      h:1080,
       Wrapper: {
         rect: true,
         color: colors.yellow,

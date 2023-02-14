@@ -1,4 +1,4 @@
 import { Lightning } from "@lightningjs/sdk";
-export class Preview extends {
+export class SummaryDetail extends Lightning.Component{
 
 }

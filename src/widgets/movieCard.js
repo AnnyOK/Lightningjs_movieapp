@@ -18,6 +18,9 @@ export class MovieCard extends Lightning.Component {
       w: 500,
       h: 400,
       flexItem:{margin:10,},
+      flex:{
+        direction: 'column',
+      },
       shader:{type:Lightning.shaders.RoundedRectangle,radius:[15, 15, 15, 0]},
       Title: {
         x: 24,
@@ -37,8 +40,10 @@ export class MovieCard extends Lightning.Component {
         rect:true,
         w:500,
         h:300,
-        y:250,
+        // y:50,
         alpha:0,
+        color:colors.white,
+        src:this.bindProp('image'),
         shader:{
           type:Lightning.shaders.RoundedRectangle,radius:8
         },
@@ -47,7 +52,7 @@ export class MovieCard extends Lightning.Component {
           textColor: colors.white,
           wordWrap:true,
           wordWrapWidth:450,
-          maxLines:3
+          maxLines:5
           
         }
       }
@@ -58,13 +63,13 @@ export class MovieCard extends Lightning.Component {
   
     this.patch({
           shader:{type:Lightning.shaders.RoundedRectangle,radius:50},
-          Description:{alpha:1}
+          Description:{w:1200,h:800,alpha:1,zIndex:199}
     })
   }
   _unfocus() {
     this.patch({
           shader:{type:Lightning.shaders.RoundedRectangle,radius:[15, 15, 15, 0]},
-          Description:{alpha:0}
+          Description:{alpha:0,}
     })
   }
 }
